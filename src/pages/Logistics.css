@@ -1,0 +1,21 @@
+.logistics-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .transport-buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .transport-buttons button:hover {
+    background-color: #45a049;
+  }
+  

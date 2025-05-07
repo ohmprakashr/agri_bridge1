@@ -1,0 +1,67 @@
+.orders-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fefefe;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .orders-container h2 {
+    text-align: center;
+    color: #2d572c;
+    margin-bottom: 20px;
+  }
+  
+  .no-orders {
+    text-align: center;
+    color: #888;
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .orders-table th {
+    background-color: #e8f5e9;
+    color: #2d572c;
+  }
+  
+  .summary {
+    text-align: right;
+    background: #f9f9f9;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .summary p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #444;
+  }
+  
+  .pay-now-button {
+    margin-top: 15px;
+    background-color: #2d572c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .pay-now-button:hover {
+    background-color: #216321;
+  }
+  

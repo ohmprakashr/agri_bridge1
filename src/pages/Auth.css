@@ -1,0 +1,96 @@
+/* General body styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #e1f5fe);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for all auth forms */
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading style */
+.auth-container h2 {
+  margin-bottom: 24px;
+  color: #333;
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input field styling */
+input {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+/* Highlight on focus */
+input:focus {
+  border-color: #00d440;
+}
+
+/* Button styling */
+button {
+  padding: 12px;
+  background-color: #0c6c47;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0cc922d6;
+}
+
+/* Footer below form (links, etc.) */
+.auth-footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Links inside footer */
+.auth-footer a {
+  color: #0df919;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Link hover */
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile-friendly tweaks */
+@media (max-width: 480px) {
+  .auth-container {
+    margin: 40px 20px;
+    padding: 20px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}
