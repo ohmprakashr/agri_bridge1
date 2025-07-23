@@ -12,12 +12,19 @@ import Analytics from './pages/Analytics';
 import Navbar from './components/Navbar';
 import ForgotPassword from "./pages/ForgotPassword";
 import AddCropPrice from './pages/AddCropPrice';
+//import Login from './Login';
+//import Signup from './Signup';
+//import AddProduct from './AddProduct'; 
 
 function App() {
   return (
     <Router>
       <Navbar />
       <Routes>
+        {/* <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/add-product" element={<AddProduct />} /> */}
+         <Route path="/add-product" element={<AddCropPrice />} />
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />

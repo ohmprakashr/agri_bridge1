@@ -13,7 +13,7 @@ function Navbar() {
         <Link to="/orders">Orders</Link>
         <Link to="/logistics">Logistics</Link>
         <Link to="/analytics">Analytics</Link>
-        <Link to="/payment">Payments</Link>
+        {/* <Link to="/payment">Payments</Link> */}
         <Link to="/login">Login</Link>
         <Link to="/add-crop">AddProducts</Link>
 

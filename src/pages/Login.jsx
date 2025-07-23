@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from './firebase'; // adjust path
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom'; // <-- ✅ added useNavigate
 import './Login.css';
 
 function Login() {
   const [form, setForm] = useState({ phone_number: '', password: '' });
+  const navigate = useNavigate(); // <-- ✅ initialize navigate
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
@@ -14,6 +15,7 @@ function Login() {
     try {
       await signInWithEmailAndPassword(auth, form.phone_number + '@app.com', form.password);
       alert('Login successful');
+      navigate('/add-product'); // <-- ✅ redirect to Add Product page
     } catch (err) {
       alert(err.message);
     }
